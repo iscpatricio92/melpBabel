@@ -25,13 +25,18 @@ export class NavbarComponent extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
+        <Navbar color="dark" light fixed={true} expand="md">
+          <NavbarBrand href="/">
+          <img src="https://logos-download.com/wp-content/uploads/2017/11/Food_Network_logo_green.svg" className="img-responsive" alt="memp"/>
+          </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">Ordenar por mejor calificación</NavLink>
+                <NavLink href="#">Recomandaciones</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#">Buscar en el mapa</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

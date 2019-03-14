@@ -1,0 +1,32 @@
+/*.navbar {
+  background-color: transparent;    
+}
+.top-nav-collapse {
+  background-color: #4285F4;
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+      background-color: #4285F4;
+  }
+}*/
+/*nav.navbar{
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}*/
+.navbar-nav {
+  margin: 0 auto;
+  width: auto !important;
+  text-align: center; }
+  .navbar-nav > li {
+    padding: 0 1rem;
+    border-left: solid 2px #bd2b30;
+    text-transform: uppercase; }
+    @media only screen and (max-width: 768px) {
+      .navbar-nav > li {
+        padding: 0 5px; } }
+  .navbar-nav:first-child {
+    border-left: none; }
+
+/*.active{
+  background: red;
+}*/

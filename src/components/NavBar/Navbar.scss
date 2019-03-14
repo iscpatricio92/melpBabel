@@ -1,0 +1,40 @@
+$primary:#bd2b30;
+/*.navbar {
+  background-color: transparent;    
+}
+.top-nav-collapse {
+  background-color: #4285F4;
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+      background-color: #4285F4;
+  }
+}*/
+/*nav.navbar{
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}*/
+.navbar-nav{
+  //width: 100%;
+  margin: 0 auto;
+  width: auto !important;
+  text-align: center;  
+    > li {
+      //float: none;
+      //display: inline-block;      
+      //width: 100%;
+      padding: 0 1rem;
+      border-left: solid 2px $primary;
+      text-transform: uppercase;
+      @media only screen and (max-width:768px) {
+        padding: 0 5px;
+      }
+
+    }
+    &:first-child{
+      border-left: none;
+    }
+}
+/*.active{
+  background: red;
+}*/

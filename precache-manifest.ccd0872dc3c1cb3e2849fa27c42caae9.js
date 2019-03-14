@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "0259074974b99a4675f9",
+    "revision": "86fd0e5fe2e06e2a76e6",
     "url": "/melpBabel/static/css/main.ce0146f9.chunk.css"
   },
   {
-    "revision": "0259074974b99a4675f9",
-    "url": "/melpBabel/static/js/main.d33c6628.chunk.js"
+    "revision": "86fd0e5fe2e06e2a76e6",
+    "url": "/melpBabel/static/js/main.a69ea890.chunk.js"
   },
   {
     "revision": "da6f54fc01181d33baea",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/melpBabel/static/media/fontawesome-webfont.912ec66d.svg"
   },
   {
-    "revision": "0bb14037011cdf7fa3296e2d8702ffb2",
+    "revision": "e59fc69e5267fc750c85027effab57ac",
     "url": "/melpBabel/index.html"
   }
 ];

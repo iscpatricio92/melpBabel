@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/melpBabel/precache-manifest.6ec9cf6c5052476a8f3627d21cb1b0e7.js"
+  "/melpBabel/precache-manifest.ce1206990258f99a1676466d7f45c65f.js"
 );
 
 workbox.clientsClaim();

@@ -1,14 +1,16 @@
 {
-  "main.css": "/melpBabel/static/css/main.a272d387.chunk.css",
-  "main.js": "/melpBabel/static/js/main.e093aa20.chunk.js",
-  "main.js.map": "/melpBabel/static/js/main.e093aa20.chunk.js.map",
+  "main.css": "/melpBabel/static/css/main.ce0146f9.chunk.css",
+  "main.js": "/melpBabel/static/js/main.d33c6628.chunk.js",
+  "main.js.map": "/melpBabel/static/js/main.d33c6628.chunk.js.map",
   "runtime~main.js": "/melpBabel/static/js/runtime~main.82ceb933.js",
   "runtime~main.js.map": "/melpBabel/static/js/runtime~main.82ceb933.js.map",
-  "static/js/2.8f71a45e.chunk.js": "/melpBabel/static/js/2.8f71a45e.chunk.js",
-  "static/js/2.8f71a45e.chunk.js.map": "/melpBabel/static/js/2.8f71a45e.chunk.js.map",
+  "static/css/2.afd861ef.chunk.css": "/melpBabel/static/css/2.afd861ef.chunk.css",
+  "static/js/2.785a9f2a.chunk.js": "/melpBabel/static/js/2.785a9f2a.chunk.js",
+  "static/js/2.785a9f2a.chunk.js.map": "/melpBabel/static/js/2.785a9f2a.chunk.js.map",
   "index.html": "/melpBabel/index.html",
-  "precache-manifest.6ec9cf6c5052476a8f3627d21cb1b0e7.js": "/melpBabel/precache-manifest.6ec9cf6c5052476a8f3627d21cb1b0e7.js",
+  "precache-manifest.ce1206990258f99a1676466d7f45c65f.js": "/melpBabel/precache-manifest.ce1206990258f99a1676466d7f45c65f.js",
   "service-worker.js": "/melpBabel/service-worker.js",
-  "static/css/main.a272d387.chunk.css.map": "/melpBabel/static/css/main.a272d387.chunk.css.map",
-  "static/media/logo.svg": "/melpBabel/static/media/logo.5d5d9eef.svg"
+  "static/css/2.afd861ef.chunk.css.map": "/melpBabel/static/css/2.afd861ef.chunk.css.map",
+  "static/css/main.ce0146f9.chunk.css.map": "/melpBabel/static/css/main.ce0146f9.chunk.css.map",
+  "static/media/font-awesome.min.css": "/melpBabel/static/media/fontawesome-webfont.fee66e71.woff"
 }

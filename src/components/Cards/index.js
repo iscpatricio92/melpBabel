@@ -1,8 +1,15 @@
 import React from 'react';
 import { Card, Row, Col, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button } from 'reactstrap';
+  CardTitle, CardSubtitle, CardFooter } from 'reactstrap';
 import StarsComponent from '../Stars';
+import ModalComponent from '../Modal';
 import './Cards.scss';
+import {
+    FacebookShareButton,
+    TwitterShareButton,
+    FacebookIcon,
+    TwitterIcon,
+  } from 'react-share';
 export default class CardComponent extends React.Component {    
     constructor(props) {
         super(props);
@@ -11,37 +18,61 @@ export default class CardComponent extends React.Component {
     }
     render() {
         const a=this.state.data;
-        console.log(a);
+        const shareUrl = a.contact.site;
         return (
-            <div>
-            <Card>
+            <Card className="shadow p-3 mb-5 bg-white rounded">
                 <CardImg top width="100%" src="http://lorempixel.com/300/150/food/" alt={a.name} />
                 <CardBody className="text-left">
-                    <CardTitle className="pb-0 mb-0"><h1 className="">{a.name}</h1></CardTitle>
+                    <CardTitle className="pb-0 mb-0"><h3 className="">{a.name}</h3></CardTitle>
                     <CardSubtitle><StarsComponent count={a.rating} /></CardSubtitle>
                     
                     <CardText>
                         <Row>
-                            <Col xs="2"><i className="fa fa-2x fa-map-pin"></i></Col>
-                            <Col xs="10">{a.address.street +", "+a.address.city}</Col>
+                            <Col xs="2"><i className="fa fa-map"></i></Col>
+                            <Col xs="10">
+                                <ModalComponent address={a.address} titleRestaurant={a.name} buttonLabel={a.address.street +", "+a.address.city} />
+                            </Col>
                         </Row>
                         <Row>
-                            <Col xs="2"><i className="fa fa-2x fa-phone"></i></Col>
+                            <Col xs="2"><i className="fa fa-phone"></i></Col>
                             <Col xs="10"><a href={"tel:"+a.contact.phone}>{a.contact.phone}</a></Col>
                         </Row>
                         <Row>
-                            <Col xs="2"><i className="fa fa-2x fa-envelope"></i></Col>
+                            <Col xs="2"><i className="fa fa-envelope"></i></Col>
                             <Col xs="10"><a href={"mailto:"+a.contact.email}>{a.contact.email}</a></Col>
                         </Row>
                         <Row>
-                            <Col xs="2"><i className="fa fa-2x fa-globe"></i></Col>
-                            <Col xs="10"><a target="_blank" href={a.contact.site}>{a.contact.site}</a></Col>
+                            <Col xs="2"><i className="fa fa-globe"></i></Col>
+                            <Col xs="10"><a  href={a.contact.site}>{a.contact.site}</a></Col>
                         </Row>
                     </CardText>
-                    <Button>Ver mapa</Button>
+                    
                 </CardBody>
+                <CardFooter>
+                    <Row>
+                        <Col xs="6">
+                            <FacebookShareButton
+                                url={shareUrl}
+                                quote={a.name}
+                                className="share-button">
+                                <FacebookIcon
+                                size={32}
+                                round />
+                            </FacebookShareButton>
+                        </Col>
+                        <Col xs="6">
+                            <TwitterShareButton
+                                url={shareUrl}
+                                quote={a.name}
+                                className="share-button">
+                                <TwitterIcon
+                                size={32}
+                                round />
+                            </TwitterShareButton>
+                        </Col>
+                    </Row>
+                </CardFooter>
             </Card>
-            </div>
         );
     }
 }

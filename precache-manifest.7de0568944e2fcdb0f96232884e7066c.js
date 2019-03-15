@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "8c4be628f6ff6e8a1b79",
-    "url": "/melpBabel/static/css/main.626f8b64.chunk.css"
+    "revision": "63b23cd6bf9e73877b50",
+    "url": "/melpBabel/static/css/main.a071d923.chunk.css"
   },
   {
-    "revision": "8c4be628f6ff6e8a1b79",
-    "url": "/melpBabel/static/js/main.ce35e031.chunk.js"
+    "revision": "63b23cd6bf9e73877b50",
+    "url": "/melpBabel/static/js/main.2ddd6ca3.chunk.js"
   },
   {
     "revision": "da6f54fc01181d33baea",
     "url": "/melpBabel/static/js/runtime~main.82ceb933.js"
   },
   {
-    "revision": "92dfb134d4beaa631c5c",
+    "revision": "6773aa7c555b4871e1f9",
     "url": "/melpBabel/static/css/2.afd861ef.chunk.css"
   },
   {
-    "revision": "92dfb134d4beaa631c5c",
-    "url": "/melpBabel/static/js/2.8a3b4f16.chunk.js"
+    "revision": "6773aa7c555b4871e1f9",
+    "url": "/melpBabel/static/js/2.08a01d3c.chunk.js"
   },
   {
     "revision": "af7ae505a9eed503f8b8e6982036873e",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/melpBabel/static/media/fontawesome-webfont.912ec66d.svg"
   },
   {
-    "revision": "a6be86d426dd9bf46409a2398aab260a",
+    "revision": "430ba7cdb50cd8ed8d255cafa806324b",
     "url": "/melpBabel/index.html"
   }
 ];

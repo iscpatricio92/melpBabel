@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Row, Col, CardImg, CardText, CardBody,
+import { Card, Row, Col, CardImg, CardBody,
   CardTitle, CardSubtitle, CardFooter } from 'reactstrap';
 import StarsComponent from '../Stars';
 import ModalComponent from '../Modal';
@@ -13,9 +13,15 @@ import {
 export default class CardComponent extends React.Component {    
     constructor(props) {
         super(props);
-        this.state={};
+        this.state={data:[]};
         this.state={...props};
     }
+
+
+    componentWillReceiveProps(newProps) {
+        this.setState({...newProps});
+    }
+
     render() {
         const a=this.state.data;
         const shareUrl = a.contact.site;
@@ -26,7 +32,6 @@ export default class CardComponent extends React.Component {
                     <CardTitle className="pb-0 mb-0"><h3 className="">{a.name}</h3></CardTitle>
                     <CardSubtitle><StarsComponent count={a.rating} /></CardSubtitle>
                     
-                    <CardText>
                         <Row>
                             <Col xs="2"><i className="fa fa-map"></i></Col>
                             <Col xs="10">
@@ -35,17 +40,16 @@ export default class CardComponent extends React.Component {
                         </Row>
                         <Row>
                             <Col xs="2"><i className="fa fa-phone"></i></Col>
-                            <Col xs="10"><a href={"tel:"+a.contact.phone}>{a.contact.phone}</a></Col>
+                            <Col xs="10"><p><a href={"tel:"+a.contact.phone}>{a.contact.phone}</a></p></Col>
                         </Row>
                         <Row>
                             <Col xs="2"><i className="fa fa-envelope"></i></Col>
-                            <Col xs="10"><a href={"mailto:"+a.contact.email}>{a.contact.email}</a></Col>
+                            <Col xs="10"><p><a href={"mailto:"+a.contact.email}>{a.contact.email}</a></p></Col>
                         </Row>
                         <Row>
                             <Col xs="2"><i className="fa fa-globe"></i></Col>
-                            <Col xs="10"><a  href={a.contact.site}>{a.contact.site}</a></Col>
+                            <Col xs="10"><p><a  href={a.contact.site}>{a.contact.site}</a></p></Col>
                         </Row>
-                    </CardText>
                     
                 </CardBody>
                 <CardFooter>

@@ -6,15 +6,20 @@
 .card-subtitle{
     font-size: .85rem;
 }
-.card-text{
-    font-size: .80rem;
-    min-height: 80px;
-    max-height: 110px;
-
+.card .card-body{
+    max-height: 300px;
+    min-height: 275px;
     .col-10{
         padding-left: 0px
     }
     i.fa-2x{font-size: 1rem;}
+}
+.card p{
+    font-size: .80rem;
+   padding-bottom: 0px;
+   
+
+    
 }
 a,a:hover{color:#333;}
 .card{

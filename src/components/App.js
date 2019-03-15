@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.scss';
 import { NavbarComponent } from './NavBar/';
 import GridComponent  from './Grid/';
-import { Spinner } from 'reactstrap';
 class App extends Component {
   constructor(props) {
     super(props);

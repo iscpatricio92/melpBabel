@@ -25,7 +25,7 @@ export class NavbarComponent extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="dark" light fixed={true} expand="md">
+        <Navbar color="dark" dark fixed expand="md">
           <NavbarBrand href="/">
           <img src="https://logos-download.com/wp-content/uploads/2017/11/Food_Network_logo_green.svg" className="img-responsive" alt="memp"/>
           </NavbarBrand>

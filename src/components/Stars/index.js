@@ -6,8 +6,12 @@ export default class StarsComponent extends React.Component {
         this.state={};
         this.state={...props};
     }
+    componentWillReceiveProps(newProps) {
+        this.setState({...newProps});
+    }
     render() {
         const a=this.state.count;
+        
         return (
             <div className="pb-2">
                 <ReactStars 
